@@ -1,10 +1,11 @@
-import React from "react";
+import React from "react"; // importo React
+import rigoImage from "../../img/rigo-baby.jpg"; //include images into your bundle
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
-
-//create your first component
+//2. Create your first component with PascalCase name
 const Home = () => {
+	// 3. Código de JS
+
+	// 4. Devuelvo un único elemento HTML
 	return (
 		<div className="text-center">
 			<h1 className="text-center mt-5">Hello Rigo!</h1>
@@ -23,4 +24,11 @@ const Home = () => {
 	);
 };
 
+
+// 5. Exporto mi componente
 export default Home;
+
+
+// En el archivo donde voy a utilizar el componente debo:
+// 6. Importar el componente
+// 7. Utilizar el componente
