@@ -3,11 +3,11 @@ import React from "react"; // importo React
 import rigoImage from "../../img/rigo-baby.jpg"; //include images into your bundle
 
 //2. Create your first component with PascalCase name
-import React from "react";
-import rigoImage from "../../img/rigo-baby.jpg";
 import Navbar from "./Navbar.jsx"; // Componente con export default
 import { Footer } from "./Footer.jsx"; // Componente con export const
 import { Jumbotron } from "./Jumbotron.jsx";
+import { Alert } from "./Alert.jsx";
+import { Spinner } from "./Spinner.jsx";
 
 //create your first component
 const Home = () => {
@@ -17,6 +17,8 @@ const Home = () => {
 	return (
 		<div className="text-center">
 			<Navbar />
+			<Alert />
+			<Spinner />
 			<h1 className="text-center mt-5">{"Intro React"}</h1>
 			<Jumbotron />
 			{/* <p>
@@ -25,7 +27,7 @@ const Home = () => {
 			<a href="#" className="btn btn-success">
 				If you see this green button... bootstrap is working...
 			</a>*/}
-			
+
 			<Footer />
 		</div>
 	);
